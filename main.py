@@ -139,6 +139,8 @@ class TableRender(ReportRender):
 
 
 class ReportEngine:
+    """Ядро для запуска обработки отсчетов"""
+
     def __init__(
         self, reader: ReportReader, generator: ReportGenerator, render: ReportRender, report_filter: ReportFilter = None
     ) -> None:
